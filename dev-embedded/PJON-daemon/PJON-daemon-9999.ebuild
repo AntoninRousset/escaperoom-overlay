@@ -14,7 +14,7 @@ LICENSE="GPL-3"
 KEYWORD=""
 IUSE="savedconfig"
 
-RDEPEND="sys-fs/udev" # Not really necessary?
+RDEPEND="virtual/udev" # Not really necessary?
 DEPEND="${RDEPEND}"
 
 src_prepare() {
