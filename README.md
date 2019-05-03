@@ -2,7 +2,7 @@
 A portage overlay for all room monitoring and controlling
 
 ## Installation
-To add this overlay create the file /etc/portage/repos.conf/room.conf
+To add this overlay create the file /etc/portage/repos.conf/room.conf containing:
 ```
 [room]
 location = /usr/room/portage
