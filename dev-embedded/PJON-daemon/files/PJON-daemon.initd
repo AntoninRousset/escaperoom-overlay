@@ -1,0 +1,17 @@
+#!/sbin/openrc-run
+
+command=/usr/bin/PJON-daemon
+pidfile=/var/run/PJON-daemon.pid
+
+start() {
+	ebegin "Starting PJON-daemon"
+	start-stop-daemon --start --exec $command --background\
+		--pidfile pidfile --make-pidfile 
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping PJON-daemon"
+	start-stop-daemon --stop --exec $command --pidfile pidfile
+	eend $?
+}
