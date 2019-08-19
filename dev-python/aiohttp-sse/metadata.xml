@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-<<<<<<< HEAD
-	<maintainer type="person">
-		<email>zmedico@gentoo.org</email>
-		<name>Zac Medico</name>
-	</maintainer>
-	<upstream>
-		<remote-id type="pypi">aiohttp_jinja2</remote-id>
-		<remote-id type="github">aio-libs/aiohttp-jinja2</remote-id>
-	</upstream>
-=======
 	<maintainer type="project">
 		<email>python@gentoo.org</email>
 		<name>Python</name>
 	</maintainer>
->>>>>>> 4574d10564667df8287d470f60e0eca61d87d609
 </pkgmetadata>
