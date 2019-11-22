@@ -5,8 +5,8 @@ A portage overlay for all room monitoring and controlling
 To add this overlay create the file /etc/portage/repos.conf/room.conf containing:
 ```
 [room]
-location = /var/lib/overlays/room
+location = /var/db/repos/escaperoom
 sync-type = git
-sync-uri = https://github.com/AntoninRousset/room-overlay.git
+sync-uri = https://github.com/AntoninRousset/escaperoom-overlay.git
 ```
-and sync your portage tree with `emerge --sync room`
+and sync your portage tree with `emerge --sync escaperoom`
