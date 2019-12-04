@@ -16,14 +16,14 @@ EGIT_REPO_URI="${HOMEPAGE}.git"
 SLOT="0"
 LICENSE="GPL-3"
 KEYWORDS=""
-IUSE="array+"
+IUSE=""
 
 RDEPEND="
 	${PYTHON_DEPS}
 	>=media-libs/opencv-3.4.1-r7[${PYTHON_USEDEP}]
 	>=dev-python/numpy-1.14.5[${PYTHON_USEDEP}]
 	>=dev-python/matplotlib-2.2.2-r1[${PYTHON_USEDEP}]
-	>=dev-python/picamera-1.13[${PYTHON_USEDEP},array]
+	>=dev-python/picamera-1.13[${PYTHON_USEDEP}]
 "
 
 DEPEND="${RDEPEND}"
