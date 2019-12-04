@@ -23,6 +23,7 @@ RDEPEND="
 	>=media-libs/opencv-3.4.1-r7[${PYTHON_USEDEP}]
 	>=dev-python/numpy-1.14.5[${PYTHON_USEDEP}]
 	>=dev-python/matplotlib-2.2.2-r1[${PYTHON_USEDEP}]
+	>=dev-python/picamera-1.13[${PYTHON_USEDEP},array]
 "
 
 DEPEND="${RDEPEND}"
