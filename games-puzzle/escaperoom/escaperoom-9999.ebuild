@@ -3,50 +3,29 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{6,7} )
-PYTHON_REQ_USE="tk?,threads(+)"
+PYTHON_COMPAT=( python3_6 )
+PYTHON_REQ_USE="threads(+)"
 
-inherit distutils-r1 flag-o-matic virtualx toolchain-funcs prefix
+inherit git-r3 distutils-r1 flag-o-matic virtualx toolchain-funcs prefix
 
 DESCRIPTION="Run and monitor an escape room"
 HOMEPAGE="https://github.com/AntoninRousset/${PN}"
-SRC_URI="${HOMEPAGE}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+#SRC_URI="${HOMEPAGE}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+EGIT_REPO_URI="${HOMEPAGE}.git"
 
 SLOT="0"
 LICENSE="GPL-3"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
+PYTHON_REQ_USE="sqlite(+)"
+
 RDEPEND="
 	${PYTHON_DEPS}
-	virtual/pkgconfig
-	>=media-libs/freetype-2.3.0
-	>=media-libs/libpng-1.2
-	>=dev-python/numpy-1.11.0[${PYTHON_USEDEP}]
-	>=dev-python/setuptools-40.6.3[${PYTHON_USEDEP}]
-	>=dev-python/cycler-0.10.0[${PYTHON_USEDEP}]
-	>=dev-python/python-dateutil-2.1.0[${PYTHON_USEDEP}]
-	>=dev-python/kiwisolver-1.0.1[${PYTHON_USEDEP}]
-	>=dev-python/pyparsing-2.3.1[${PYTHON_USEDEP}]
-
-	tk? ( >dev-lang/tk-8.6.1 )
-	qt5? ( dev-python/PyQt5[${PYTHON_USEDEP}] )
-	gtk? ( dev-python/pygobject[${PYTHON_USEDEP}] )
-	wxwidgets? ( dev-python/wxpython[${PYTHON_USEDEP}] )
-	cairo? (
-		|| (
-			>=dev-python/cairocffi-0.8.0[${PYTHON_USEDEP}]
-			dev-python/pycairo[${PYTHON_USEDEP}]
-		)
-	)
-	server? ( www-servers/tornado )
-	ffmpeg? ( virtual/ffmpeg )
-	imagemagick? ( media-gfx/imagemagick )
-	pillow? ( >=dev-python/pillow-3.4[${PYTHON_USEDEP}] )
-	latex? (
-		virtual/latex-base
-		>=app-text/ghostscript-gpl-9.0
-	)
+	>=dev-python/aiortc-0.9.22
+	>=dev-python/aiohttp-3.6.1
+	>=dev-python/aiohttp-jinja2-0.15.0
+	>=dev-python/aiohttp-sse-2.0.0
 "
 
 DEPEND="${RDEPEND}"
