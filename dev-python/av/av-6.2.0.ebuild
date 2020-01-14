@@ -19,7 +19,7 @@ IUSE=""
 RDEPEND="
 	${PYTHON_DEPS}
 	virtual/pkgconfig
-	media-video/libav
+	virtual/ffmpeg
 "
 
 DEPEND="${RDEPEND}"
