@@ -21,6 +21,7 @@ RDEPEND="
 	${PYTHON_DEPS}
 	virtual/pkgconfig
 	net-libs/libsrtp
+	dev-python/cffi
 "
 
 DEPEND="${RDEPEND}"
