@@ -18,9 +18,9 @@ RDEPEND=""
 
 EGIT_REPO_URI="https://github.com/raspberrypi/userland"
 
-pkg_setup() {
-	append-ldflags $(no-as-needed)
-}
+#pkg_setup() {
+	#wappend-ldflags $(no-as-needed)
+#}
 
 src_configure() {
 	local mycmakeargs=(

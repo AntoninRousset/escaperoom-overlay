@@ -4,7 +4,7 @@
 EAPI=7
 
 PYTHON_COMPAT=( python3_6 )
-PYTHON_REQ_USE="threads(+)"
+PYTHON_REQ_USE="threads(+),sqlite(+)"
 
 inherit git-r3 distutils-r1 flag-o-matic virtualx toolchain-funcs prefix
 
@@ -18,7 +18,6 @@ LICENSE="GPL-3"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-PYTHON_REQ_USE="sqlite(+)"
 
 RDEPEND="
 	${PYTHON_DEPS}
