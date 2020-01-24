@@ -20,17 +20,8 @@ IUSE=""
 
 RDEPEND="
 	${PYTHON_DEPS}
-	>=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
 	>=dev-python/PyQt5-5.12.2[${PYTHON_USEDEP}]
 "
 
 DEPEND="${RDEPEND}"
-
-REQUIRED_USE="
-	${PYTHON_REQUIRED_USE}
-"
-
-python_prepare_all() {
-	distutils-r1_python_prepare_all
-}
 
