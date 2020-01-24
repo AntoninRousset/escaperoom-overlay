@@ -6,7 +6,7 @@ EAPI=7
 PYTHON_COMPAT=( python3_6 )
 PYTHON_REQ_USE="threads(+)"
 
-inherit git-r3 distutils-r1 flag-o-matic virtualx toolchain-funcs prefix
+inherit git-r3 distutils-r1
 
 DESCRIPTION="Display informations in an escaperoom"
 HOMEPAGE="https://github.com/AntoninRousset/${PN}"
@@ -18,8 +18,7 @@ LICENSE="GPL-3"
 KEYWORDS=""
 IUSE=""
 
-RDEPEND="
-	${PYTHON_DEPS}
+RDEPEND="${PYTHON_DEPS}
 	>=dev-python/PyQt5-5.12.2[${PYTHON_USEDEP}]
 "
 
