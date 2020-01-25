@@ -12,7 +12,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND=""
+DEPEND="${PYTHON_DEPS}"
 RDEPEND="${DEPEND}"
 
 src_unpack() {

@@ -19,12 +19,10 @@ IUSE=""
 
 RDEPEND="
 	${PYTHON_DEPS}
+	dev-python/netifaces[${PYTHON_USEDEP}]
+"
+
+DEPEND="${RDEPEND}
 	virtual/pkgconfig
-	dev-python/netifaces
 "
 
-DEPEND="${RDEPEND}"
-
-REQUIRED_USE="
-	${PYTHON_REQUIRED_USE}
-"

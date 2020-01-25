@@ -12,6 +12,9 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND=""
-RDEPEND="${DEPEND}"
+RDEPEND="${PYTHON_DEPS}
+	dev-embedded/PJON-daemon
+	"
+
+DEPEND="${RDEPEND}"
 

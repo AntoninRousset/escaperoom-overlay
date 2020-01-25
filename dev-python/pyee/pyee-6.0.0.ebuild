@@ -16,24 +16,18 @@ LICENSE="MIT"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND="
-	${PYTHON_DEPS}
-	virtual/pkgconfig
+RDEPEND="${PYTHON_DEPS}
 "
 
 #pytest-asyncio needs python > 3.4
 #pytest-futures need python < 3.0
 
-DEPEND="
-	${RDEPEND}
+DEPEND="${RDEPEND}
+	virtual/pkgconfig
 	dev-python/pytest-asyncio
 	dev-python/pytest-runner
 	dev-python/vcversioner
 	dev-python/twisted
 	dev-python/futures
-"
-
-REQUIRED_USE="
-	${PYTHON_REQUIRED_USE}
 "
 

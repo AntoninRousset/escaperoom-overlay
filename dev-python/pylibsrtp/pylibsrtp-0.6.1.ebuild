@@ -17,21 +17,12 @@ LICENSE="BSD"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND="
-	${PYTHON_DEPS}
+RDEPEND="${PYTHON_DEPS}
 	virtual/pkgconfig
+"
+
+DEPEND="${RDEPEND}
 	net-libs/libsrtp
 	dev-python/cffi
 "
-
-DEPEND="${RDEPEND}"
-
-REQUIRED_USE="
-	${PYTHON_REQUIRED_USE}
-"
-
-#python_prepare_all() {
-#	distutils-r1_python_prepare_all
-#	mv "${WORKDIR}"/${JQUERY_UI} "${WORKDIR}"/${P}/lib/matplotlib/backends/web_backend/
-#}
 

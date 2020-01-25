@@ -11,40 +11,28 @@ DESCRIPTION="WebRTC and ORTC implementation for Python using asyncio"
 HOMEPAGE="https://github.com/aiortc/${PN}"
 SRC_URI="${HOMEPAGE}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
-
 SLOT="0"
 LICENSE="BSD"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND="
-	${PYTHON_DEPS}
+RDEPEND="${PYTHON_DEPS}
 	virtual/pkgconfig
 	|| (
 		>=media-video/ffmpeg-3.2[opus,vpx]
 		>=media-video/libav-12.3[opus,vpx]
 	)
-	>=dev-python/aioice-0.6.15
-	!>=dev-python/aioice-0.7.0
-	dev-python/attrs
-	>=dev-python/av-6.2.0
-	!>=dev-python/av-7.0.0
-	>=dev-python/cffi-1.0.0
-	dev-python/crc32c
-	>=dev-python/cryptography-2.2
-	>=dev-python/pyee-6.0.0
-	dev-python/pyopenssl
-	>=dev-python/pylibsrtp-0.5.6
+	>=dev-python/aioice-0.6.15[${PYTHON_USEDEP}]
+	!>=dev-python/aioice-0.7.0[${PYTHON_USEDEP}]
+	dev-python/attrs[${PYTHON_USEDEP}]
+	>=dev-python/av-6.2.0[${PYTHON_USEDEP}]
+	!>=dev-python/av-7.0.0[${PYTHON_USEDEP}]
+	>=dev-python/cffi-1.0.0[${PYTHON_USEDEP}]
+	dev-python/crc32c[${PYTHON_USEDEP}]
+	>=dev-python/cryptography-2.2[${PYTHON_USEDEP}]
+	>=dev-python/pyee-6.0.0[${PYTHON_USEDEP}]
+	dev-python/pyopenssl[${PYTHON_USEDEP}]
+	>=dev-python/pylibsrtp-0.5.6[${PYTHON_USEDEP}]
 "
 
 DEPEND="${RDEPEND}"
-
-REQUIRED_USE="
-	${PYTHON_REQUIRED_USE}
-"
-
-#python_prepare_all() {
-#	distutils-r1_python_prepare_all
-#	mv "${WORKDIR}"/${JQUERY_UI} "${WORKDIR}"/${P}/lib/matplotlib/backends/web_backend/
-#}
-

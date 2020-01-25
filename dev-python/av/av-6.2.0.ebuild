@@ -18,13 +18,10 @@ IUSE=""
 
 RDEPEND="
 	${PYTHON_DEPS}
-	virtual/pkgconfig
 	virtual/ffmpeg
 "
 
-DEPEND="${RDEPEND}"
-
-REQUIRED_USE="
-	${PYTHON_REQUIRED_USE}
+DEPEND="${RDEPEND}
+	virtual/pkgconfig
 "
 

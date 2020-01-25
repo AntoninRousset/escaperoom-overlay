@@ -11,12 +11,10 @@ EGIT_REPO_URI="https://github.com/jiaaro/pydub.git"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="ffmpeg"
+IUSE=""
 
-DEPEND=""
 RDEPEND="
-	${DEPEND}
-	ffmpeg? (
 		virtual/ffmpeg
-	)
 "
+
+DEPEND="${RDEPEND}"
