@@ -16,11 +16,10 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="doc test"
 
-RDEPEND="
+RDEPEND="${PYTHON_DEPS}
 	>=dev-python/aiohttp-2.3.9[${PYTHON_USEDEP}]
 "
-DEPEND="
-	${RDEPEND}
+DEPEND="${RDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	doc? (
 		>=dev-python/alabaster-0.6.2[${PYTHON_USEDEP}]

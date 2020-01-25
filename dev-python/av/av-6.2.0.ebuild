@@ -16,8 +16,7 @@ LICENSE="BSD"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND="
-	${PYTHON_DEPS}
+RDEPEND="${PYTHON_DEPS}
 	virtual/ffmpeg
 "
 
