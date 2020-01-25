@@ -16,8 +16,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND="${PYTHON_DEPS}
-"
+RDEPEND="${PYTHON_DEPS}"
 
 #pytest-asyncio needs python > 3.4
 #pytest-futures need python < 3.0
