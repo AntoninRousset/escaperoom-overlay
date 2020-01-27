@@ -6,7 +6,7 @@ EAPI=7
 PYTHON_COMPAT=( python3_6 )
 PYTHON_REQ_USE="threads(+),sqlite(+)"
 
-inherit git-r3 distutils-r1
+inherit git-r3 distutils-r1 desktop
 
 DESCRIPTION="Run and monitor an escape room"
 HOMEPAGE="https://github.com/AntoninRousset/${PN}"
@@ -28,3 +28,9 @@ RDEPEND="${PYTHON_DEPS}
 
 DEPEND="${RDEPEND}"
 
+src_install() {
+	default
+
+	domenu ${PN}.desktop
+	newicon -s scalable ${PN}.svg
+}
