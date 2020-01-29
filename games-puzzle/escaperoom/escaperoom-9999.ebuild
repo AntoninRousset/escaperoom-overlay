@@ -31,6 +31,6 @@ DEPEND="${RDEPEND}"
 src_install() {
 	default
 
-	domenu ${PN}.desktop
-	newicon -s scalable ${PN}.svg
+	doicon -s scalable ${PN}.svg || die
+	domenu ${PN}.desktop || die
 }
