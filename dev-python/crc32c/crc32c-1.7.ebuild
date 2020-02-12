@@ -16,9 +16,7 @@ LICENSE="BSD"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND="${PYTHON_DEPS}
-	dev-libs/crc32c
-"
+RDEPEND="${PYTHON_DEPS}"
 
 DEPEND="${RDEPEND}
 	virtual/pkgconfig
