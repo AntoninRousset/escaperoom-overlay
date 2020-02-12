@@ -29,7 +29,7 @@ RDEPEND="${PYTHON_DEPS}
 DEPEND="${RDEPEND}"
 
 src_install() {
-	default
+	distutils-r1_src_install
 
 	doicon -s scalable ${PN}.svg || die
 	domenu ${PN}.desktop || die
