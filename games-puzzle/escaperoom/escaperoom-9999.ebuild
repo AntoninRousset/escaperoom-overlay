@@ -23,6 +23,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-jinja2-0.15.0[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-sse-2.0.0[${PYTHON_USEDEP}]
+	>=dev-python/aiohttp-sse-client-0.1.6[${PYTHON_USEDEP}]
 	dev-python/PJON-daemon-client[${PYTHON_USEDEP}]
 "
 
