@@ -28,9 +28,9 @@ RDEPEND="${PYTHON_DEPS}
 
 DEPEND="${RDEPEND}"
 
-src_install() {
-	default
+python_install_all() {
+	distutils-r1_python_install_all
 
-	doicon -s scalable ${PN}.svg || die
-	domenu ${PN}.desktop || die
+	doicon ${PN}.svg || die
+	domenu escaperoom.desktop || die
 }
