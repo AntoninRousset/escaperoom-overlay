@@ -25,6 +25,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/aiohttp-sse-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-sse-client-0.1.6[${PYTHON_USEDEP}]
 	dev-python/PJON-daemon-client[${PYTHON_USEDEP}]
+	media-sound/mpg123
 "
 
 DEPEND="${RDEPEND}"
