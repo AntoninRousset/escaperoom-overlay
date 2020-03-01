@@ -25,7 +25,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/aiohttp-sse-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-sse-client-0.1.6[${PYTHON_USEDEP}]
 	dev-python/PJON-daemon-client[${PYTHON_USEDEP}]
-	>=media-video/mpv-0.31.0-r1
+	=media-video/mpv-0.31.0
 "
 
 DEPEND="${RDEPEND}"
