@@ -17,7 +17,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE="doc"
 
 RDEPEND="${PYTHON_DEPS}
-	media-video/mpv
+	media-video/mpv[libmpv]
 "
 DEPEND="${RDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]
