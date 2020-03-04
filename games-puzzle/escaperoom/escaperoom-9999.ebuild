@@ -25,7 +25,8 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/aiohttp-sse-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-sse-client-0.1.6[${PYTHON_USEDEP}]
 	dev-python/PJON-daemon-client[${PYTHON_USEDEP}]
-	=dev-python/python-mpv-0.4.5
+	>=dev-python/PySDL2-0.9.6[${PYTHON_USEDEP}]
+	>=media-libs/sdl2-mixer-2.0.4
 "
 
 DEPEND="${RDEPEND}"
