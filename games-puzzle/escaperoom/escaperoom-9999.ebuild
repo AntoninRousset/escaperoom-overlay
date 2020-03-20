@@ -27,6 +27,7 @@ RDEPEND="${PYTHON_DEPS}
 	dev-python/PJON-daemon-client[${PYTHON_USEDEP}]
 	>=dev-python/PySDL2-0.9.6[${PYTHON_USEDEP}]
 	>=media-libs/sdl2-mixer-2.0.4
+	dev-python/pyxdg[${PYTHON_USEDEP}]
 "
 
 DEPEND="${RDEPEND}"
