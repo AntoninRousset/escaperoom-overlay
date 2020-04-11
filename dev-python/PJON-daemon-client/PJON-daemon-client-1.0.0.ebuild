@@ -9,7 +9,7 @@ SRC_URI="https://github.com/VianneyRousset/PJON-daemon-client/archive/${PV}.tar.
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64 ~arm ~arm64 ~x86"
 IUSE=""
 
 RDEPEND="${PYTHON_DEPS}

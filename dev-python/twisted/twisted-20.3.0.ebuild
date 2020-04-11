@@ -13,7 +13,7 @@ SRC_URI="${HOMEPAGE}/archive/${P}.tar.gz -> ${P}.tar.gz"
 
 SLOT="0"
 LICENSE="MIT"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~arm ~arm64 ~x86"
 IUSE=""
 
 RDEPEND="${PYTHON_DEPS}

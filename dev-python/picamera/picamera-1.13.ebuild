@@ -9,7 +9,7 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~arm ~arm64"
+KEYWORDS="arm arm64"
 IUSE=""
 
 DEPEND="dev-python/numpy"
