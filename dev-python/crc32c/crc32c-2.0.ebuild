@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{5,6} )
+PYTHON_COMPAT=( python3_{2,3,4,5,6,7} )
 
 inherit distutils-r1
 
@@ -18,7 +18,5 @@ IUSE=""
 
 RDEPEND="${PYTHON_DEPS}"
 
-DEPEND="${RDEPEND}
-	virtual/pkgconfig
-"
+DEPEND="${RDEPEND}"
 

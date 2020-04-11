@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{5,6} )
+PYTHON_COMPAT=( python3_{5,6,7} )
 
 inherit distutils-r1
 
@@ -18,15 +18,10 @@ IUSE=""
 
 RDEPEND="${PYTHON_DEPS}"
 
-#pytest-asyncio needs python > 3.4
-#pytest-futures need python < 3.0
-
 DEPEND="${RDEPEND}
-	virtual/pkgconfig
 	dev-python/pytest-asyncio
 	dev-python/pytest-runner
 	dev-python/vcversioner
 	dev-python/twisted
-	dev-python/futures
 "
 

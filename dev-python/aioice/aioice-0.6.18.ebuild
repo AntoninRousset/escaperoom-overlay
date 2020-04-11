@@ -3,13 +3,14 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{4,5,6,7} )
+PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Pythonic bindings for FFmpeg's libraries"
-HOMEPAGE="https://github.com/mikeboers/${PN}"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
+DESCRIPTION="asyncio-based Interactive Connectivity Establishment (RFC 5245)"
+HOMEPAGE="https://github.com/aiortc/${PN}"
+SRC_URI="${HOMEPAGE}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+
 
 SLOT="0"
 LICENSE="BSD"
@@ -17,7 +18,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="${PYTHON_DEPS}
-	virtual/ffmpeg
+	dev-python/netifaces[${PYTHON_USEDEP}]
 "
 
 DEPEND="${RDEPEND}

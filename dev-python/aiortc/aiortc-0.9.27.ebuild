@@ -18,7 +18,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="${PYTHON_DEPS}
-	virtual/pkgconfig
+	$( python_gen_cond_dep 'dev-python/dataclasses[${PYTHON_USEDEP}]' python3_6 )
 	|| (
 		>=media-video/ffmpeg-3.2[opus,vpx]
 		>=media-video/libav-12.3[opus,vpx]
