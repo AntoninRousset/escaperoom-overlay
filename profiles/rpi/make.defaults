@@ -1,0 +1,12 @@
+ARCH=arm64
+
+CHOST="aarch64-unknown-linux-gnu"
+
+VIDEO_CARDS="fbdev"
+
+USE="${USE} egl gles1 gles2 ffmpeg"
+
+FEATURES="userfetch -pid-sandbox -network-sandbox"
+
+QEMU_SOFTMMU_TARGETS="aarch64 arm i386 x86_64"
+QEMU_USER_TARGETS="aarch64"

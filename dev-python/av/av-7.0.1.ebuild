@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{4,5,6,7} )
+PYTHON_COMPAT=( python2_7 python3_{4,5,6,7} )
 
 inherit distutils-r1
 
@@ -17,7 +17,7 @@ KEYWORDS="amd64 ~arm arm64 ~x86"
 IUSE=""
 
 RDEPEND="${PYTHON_DEPS}
-	virtual/ffmpeg
+	>=media-video/ffmpeg-4.1.3
 "
 
 DEPEND="${RDEPEND}

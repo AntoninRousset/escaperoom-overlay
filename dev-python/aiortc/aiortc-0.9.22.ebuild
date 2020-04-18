@@ -14,7 +14,7 @@ SRC_URI="${HOMEPAGE}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 SLOT="0"
 LICENSE="BSD"
-KEYWORDS="amd64 ̃~arm ~arm64 ~x86"
+KEYWORDS="amd64 ̃~arm arm64 ~x86"
 IUSE=""
 
 RDEPEND="${PYTHON_DEPS}
