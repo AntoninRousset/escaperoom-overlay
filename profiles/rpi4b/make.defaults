@@ -1,0 +1,12 @@
+CHOST="aarch64-unknown-linux-gnu"
+CFLAGS="-march=armv8-a+crc -mtune=cortex-a53 -ftree-vectorize -O2 -pipe -fomit-frame-point
+er"
+CXXFLAGS="${CFLAGS}"
+
+CPU_FLAGS_ARM="vfp neon crc32 thumb edsp vfpv3 vfpv4 vfp-d32 v4 v5 v6 v7 v8 thumb2"
+
+VIDEO_CARDS="vc4"
+
+USE="vc4 x264 X wayland omx-rpi mmal v4l vpx"
+USE="${USE} egl gles1 gles2 lock thunar ffmpeg"
+
