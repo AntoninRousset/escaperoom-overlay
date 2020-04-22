@@ -20,18 +20,16 @@ fi
 
 SLOT="0"
 LICENSE="GPL-3"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 IUSE="+cluesdisplay +database +sqlite"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 RDEPEND="${PYTHON_DEPS}
-	dev-python/etcd3-py[${PYTHON_USEDEP}]
-	=dev-db/etcd-3.4.7[server]
+	=dev-db/etcd-3.3.17[server]
 	>=dev-python/aiortc-0.9.22[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-sse-2.0.0[${PYTHON_USEDEP}]
-	>=dev-python/aiohttp-sse-client-0.1.6[${PYTHON_USEDEP}]
 	dev-python/PJON-daemon-client[${PYTHON_USEDEP}]
 	>=dev-python/PySDL2-0.9.6[${PYTHON_USEDEP}]
 	>=media-libs/sdl2-mixer-2.0.4
