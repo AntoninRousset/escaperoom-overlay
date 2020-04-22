@@ -21,7 +21,7 @@ fi
 SLOT="0"
 LICENSE="GPL-3"
 KEYWORDS="~amd64 ~x86"
-IUSE="+cluesdisplay"
+IUSE="+cluesdisplay +database"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
@@ -37,6 +37,7 @@ RDEPEND="${PYTHON_DEPS}
 	>=media-libs/sdl2-mixer-2.0.4
 	dev-python/pyxdg[${PYTHON_USEDEP}]
 	cluesdisplay? ( games-puzzle/escaperoom-cluesdisplay )
+	dev-python/databases[${PYTHON_USEDEP}]
 "
 
 DEPEND="${RDEPEND}"
