@@ -21,7 +21,7 @@ fi
 SLOT="0"
 LICENSE="GPL-3"
 KEYWORDS="~amd64 ~x86"
-IUSE="+cluesdisplay +database"
+IUSE="+cluesdisplay +database +sqlite"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
@@ -38,6 +38,7 @@ RDEPEND="${PYTHON_DEPS}
 	dev-python/pyxdg[${PYTHON_USEDEP}]
 	cluesdisplay? ( games-puzzle/escaperoom-cluesdisplay )
 	dev-python/databases[${PYTHON_USEDEP}]
+	sqlite? ( dev-python/aiosqlite )
 "
 
 DEPEND="${RDEPEND}"
@@ -45,6 +46,6 @@ DEPEND="${RDEPEND}"
 python_install_all() {
 	distutils-r1_python_install_all
 
-	doicon ${PN}.svg || die
+	doicon logo/logo.svg || die
 	domenu escaperoom.desktop || die
 }
