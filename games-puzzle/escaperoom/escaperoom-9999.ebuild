@@ -20,13 +20,14 @@ fi
 
 SLOT="0"
 LICENSE="GPL-3"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86"
+KEYWORDS="amd64 ~arm arm64 ~x86"
 IUSE="+cluesdisplay +database +sqlite"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 RDEPEND="${PYTHON_DEPS}
 	=dev-db/etcd-3.3.17[server]
+	>=dev-python/requests-2.22.0
 	>=dev-python/aiortc-0.9.22[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-sse-2.0.0[${PYTHON_USEDEP}]
