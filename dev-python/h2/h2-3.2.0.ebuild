@@ -3,12 +3,12 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{5,6,7} )
+PYTHON_COMPAT=( python3_{6,7,8} )
 PYTHON_REQ_USE="threads(+)"
 
 inherit distutils-r1
 
-DESCRIPTION="Pure python client for etcd v3 (Using gRPC-JSON-Gateway)"
+DESCRIPTION="HTTP/2 State-Machine based protocol implementation"
 HOMEPAGE="https://pypi.org/project/${PN}"
 
 if [[ "${PV}" == 9999 ]] ; then
@@ -19,29 +19,26 @@ else
 fi
 
 SLOT="0"
-LICENSE="Apache-2.0"
+LICENSE="MIT"
 KEYWORDS="amd64 ~arm arm64 ~x86"
-IUSE="+test"
-
-RESTRICT="!test? ( test )"
+IUSE="test"
 
 RDEPEND="${PYTHON_DEPS}
-	>=dev-db/etcd-3.2.2
-	<dev-db/etcd-3.4.0
-	>=dev-python/aiohttp-3.0.0
-	>=dev-python/six-1.11.0
-	>=dev-python/requests-2.10.0
-	>=dev-python/semantic_version-2.6.0
-	>=dev-python/pyopenssl-0.14
-	>=dev-python/cryptography-1.3.4
-	>=dev-python/idna-2.0.0
+	>=dev-python/hyperframe-5.2.0[${PYTHON_USEDEP}]
+	<dev-python/hyperframe-6.0.0
+	>=dev-python/hpack-3.0.0[${PYTHON_USEDEP}]
+	<dev-python/hpack-4.0.0
 "
 
 DEPEND="${RDEPEND}
-	>=dev-python/pip-8.1.2
 	test? (
-		=dev-python/pytest-asyncio-0.10.0
+		dev-python/pytest[${PYTHON_USEDEP}]
+		dev-python/pytest-cov[${PYTHON_USEDEP}]
+		dev-python/coverage[${PYTHON_USEDEP}]
+		dev-python/pytest-xdist[${PYTHON_USEDEP}]
+		dev-python/hypothesis[${PYTHON_USEDEP}]
 	)
+
 "
 
 

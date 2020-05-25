@@ -27,17 +27,26 @@ REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 RDEPEND="${PYTHON_DEPS}
 	=dev-db/etcd-3.3.17[server]
-	>=dev-python/requests-2.22.0
+	>=dev-python/requests-2.22.0[${PYTHON_USEDEP}]
+	>=dev-python/grpclib-0.3.1[${PYTHON_USEDEP}]
+
+	dev-python/etcd3-asyncio[${PYTHON_USEDEP}]
+
 	>=dev-python/aiortc-0.9.22[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-3.6.1[${PYTHON_USEDEP}]
 	>=dev-python/aiohttp-sse-2.0.0[${PYTHON_USEDEP}]
+
 	dev-python/PJON-daemon-client[${PYTHON_USEDEP}]
+
 	>=dev-python/PySDL2-0.9.6[${PYTHON_USEDEP}]
 	>=media-libs/sdl2-mixer-2.0.4
+
 	dev-python/pyxdg[${PYTHON_USEDEP}]
+
 	cluesdisplay? ( games-puzzle/escaperoom-cluesdisplay )
+
 	dev-python/databases[${PYTHON_USEDEP}]
-	sqlite? ( dev-python/aiosqlite )
+	sqlite? ( dev-python/aiosqlite[${PYTHON_USEDEP}] )
 "
 
 DEPEND="${RDEPEND}"
