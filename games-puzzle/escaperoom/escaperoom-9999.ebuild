@@ -27,9 +27,6 @@ REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 RDEPEND="${PYTHON_DEPS}
 	=dev-db/etcd-3.3.17[server]
-	>=dev-python/requests-2.22.0[${PYTHON_USEDEP}]
-	>=dev-python/grpclib-0.3.1[${PYTHON_USEDEP}]
-
 	dev-python/etcd3-asyncio[${PYTHON_USEDEP}]
 
 	>=dev-python/aiortc-0.9.22[${PYTHON_USEDEP}]
