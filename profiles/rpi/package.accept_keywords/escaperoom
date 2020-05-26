@@ -6,3 +6,10 @@
 =dev-python/contextvars-2.4 **
 =dev-python/immutables-0.11 **
 =dev-db/etcd-3.3.17 **
+
+=dev-python/protobuf-python-3.11.4 ~arm64
+=dev-python/namespace-google-1 ~arm64
+=dev-python/async_timeout-3.0.1 ~arm64
+=dev-python/netifaces-0.10.9 ~arm64
+=dev-python/idna-ssl-1.1.0 ~arm64
+
