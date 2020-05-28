@@ -21,6 +21,7 @@ RDEPEND="${PYTHON_DEPS}
 "
 
 DEPEND="${RDEPEND}
+	dev-python/cython
 	virtual/pkgconfig
 "
 
