@@ -26,6 +26,7 @@ IUSE=""
 RDEPEND="${PYTHON_DEPS}
 	dev-python/protobuf-python[${PYTHON_USEDEP}]
 	dev-python/googleapis-common-protos[${PYTHON_USEDEP}]
+	dev-python/grpclib[${PYTHON_USEDEP}]
 "
 
 DEPEND="${RDEPEND}"
