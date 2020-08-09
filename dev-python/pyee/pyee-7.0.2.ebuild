@@ -25,7 +25,7 @@ DEPEND="${RDEPEND}
 	)
 	dev-python/pytest-runner[${PYTHON_USEDEP}]
 	dev-python/pytest-asyncio[${PYTHON_USEDEP}]
-	$( python_gen_cond_dep 'dev-python/pytest_trio[${PYTHON_USEDEP}]' python3_{8} )
+	$( python_gen_cond_dep 'dev-python/pytest_trio[${PYTHON_USEDEP}]' python3_{7,8} )
 	dev-python/vcversioner[${PYTHON_USEDEP}]
 "
 
