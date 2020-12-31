@@ -12,7 +12,7 @@ HOMEPAGE="https://aiopg.readthedocs.io"
 SRC_URI="https://github.com/aio-libs/aiopg/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 SLOT="0"
-LICENSE="BSD 2-Clause"
+LICENSE="BSD-2"
 KEYWORDS="amd64 ̃~arm ~arm64 ~x86"
 IUSE="doc test sa"
 
